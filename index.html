@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tu Nombre – CV</title>
+
+  <style>
+    :root {
+      --primary: #1f2937;
+      --secondary: #4b5563;
+      --accent: #2563eb;
+      --background: #f9fafb;
+      --card: #ffffff;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
+                   Roboto, Helvetica, Arial, sans-serif;
+      background: var(--background);
+      color: var(--primary);
+      line-height: 1.6;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: auto;
+      padding: 3rem 1.5rem;
+    }
+
+    header {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+      margin-bottom: 3rem;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      margin: 0;
+    }
+
+    header h2 {
+      font-weight: 400;
+      color: var(--secondary);
+      margin: 0;
+    }
+
+    .contact {
+      margin-top: 1rem;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      font-size: 0.95rem;
+    }
+
+    .contact a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    .contact a:hover {
+      text-decoration: underline;
+    }
+
+    section {
+      background: var(--card);
+      border-radius: 8px;
+      padding: 1.5rem 2rem;
+      margin-bottom: 1.5rem;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+    }
+
+    section h3 {
+      margin-top: 0;
+      margin-bottom: 1rem;
+      border-bottom: 2px solid var(--background);
+      padding-bottom: 0.5rem;
+      font-size: 1.3rem;
+    }
+
+    .item {
+      margin-bottom: 1.2rem;
+    }
+
+    .item:last-child {
+      margin-bottom: 0;
+    }
+
+    .item h4 {
+      margin: 0;
+      font-size: 1.05rem;
+    }
+
+    .item span {
+      color: var(--secondary);
+      font-size: 0.9rem;
+    }
+
+    ul {
+      padding-left: 1.2rem;
+      margin: 0.5rem 0 0;
+    }
+
+    .skills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.6rem;
+    }
+
+    .skill {
+      background: var(--background);
+      padding: 0.4rem 0.8rem;
+      border-radius: 20px;
+      font-size: 0.85rem;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 2rem;
+      font-size: 0.85rem;
+      color: var(--secondary);
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <main class="container">
+
+    <!-- Header -->
+    <header>
+      <h1>Tu Nombre</h1>
+      <h2>Puesto profesional / Especialidad</h2>
+
+      <div class="contact">
+        <span>📍 Ciudad, País</span>
+        <a href="mailto:email@ejemplo.com">email@ejemplo.com</a>
+        <a href="https://github.com/tuusuario" target="_blank">GitHub</a>
+        <a href="https://linkedin.com/in/tuusuario" target="_blank">LinkedIn</a>
+      </div>
+    </header>
+
+    <!-- Perfil -->
+    <section>
+      <h3>Perfil</h3>
+      <p>
+        Profesional con experiencia en <strong>tu área</strong>, enfocado en
+        crear soluciones eficientes, escalables y bien diseñadas.
+        Apasionado por la mejora continua y el trabajo en equipo.
+      </p>
+    </section>
+
+    <!-- Experiencia -->
+    <section>
+      <h3>Experiencia</h3>
+
+      <div class="item">
+        <h4>Nombre del puesto – Empresa</h4>
+        <span>2022 – Actualidad</span>
+        <ul>
+          <li>Responsabilidad o logro clave.</li>
+          <li>Responsabilidad o logro clave.</li>
+          <li>Tecnologías o herramientas utilizadas.</li>
+        </ul>
+      </div>
+
+      <div class="item">
+        <h4>Nombre del puesto – Empresa</h4>
+        <span>2020 – 2022</span>
+        <ul>
+          <li>Responsabilidad o logro clave.</li>
+          <li>Responsabilidad o logro clave.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Educación -->
+    <section>
+      <h3>Educación</h3>
+
+      <div class="item">
+        <h4>Título o certificación</h4>
+        <span>Institución – Año</span>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section>
+      <h3>Skills</h3>
+      <div class="skills">
+        <div class="skill">JavaScript</div>
+        <div class="skill">HTML</div>
+        <div class="skill">CSS</div>
+        <div class="skill">Git</div>
+        <div class="skill">Node.js</div>
+        <div class="skill">SQL</div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      © 2026 – Tu Nombre
+    </footer>
+
+  </main>
+</body>
+</html>
